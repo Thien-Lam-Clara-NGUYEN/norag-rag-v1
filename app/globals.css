@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f6f7f9; color: #1c1f24; }
+main { max-width: 1100px; margin: 0 auto; padding: 24px; display: grid; gap: 16px; grid-template-columns: 320px 1fr; }
+h1 { grid-column: 1 / -1; margin: 0; font-size: 22px; }
+h2 { margin: 0 0 12px; font-size: 15px; }
+section { background: #fff; border: 1px solid #dde1e6; border-radius: 8px; padding: 16px; }
+.side { display: grid; gap: 16px; align-content: start; }
+.field { display: grid; gap: 4px; margin-bottom: 10px; font-size: 13px; }
+input[type="number"], textarea { width: 100%; padding: 8px; border: 1px solid #c4c9d0; border-radius: 6px; font: inherit; }
+textarea { min-height: 80px; resize: vertical; }
+button { padding: 8px 14px; border: 0; border-radius: 6px; background: #2a5bd7; color: #fff; font: inherit; cursor: pointer; }
+button.secondary { background: #e7eaee; color: #1c1f24; }
+button:disabled { opacity: 0.5; cursor: default; }
+.doc { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-bottom: 1px solid #eef0f3; font-size: 13px; }
+.doc span.name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.doc small { color: #6b7280; }
+.error { background: #fde8e8; color: #8a1c1c; padding: 10px; border-radius: 6px; margin-top: 12px; font-size: 14px; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; margin-bottom: 8px; }
+.badge.answered { background: #dcf5e4; color: #14602d; }
+.badge.no_answer { background: #fff1d6; color: #7a5200; }
+.answer { white-space: pre-wrap; line-height: 1.5; }
+.ref { display: block; width: 100%; text-align: left; background: #f1f4f9; color: #1c1f24; margin-top: 8px; padding: 10px; }
+.ref small { color: #6b7280; display: block; margin-top: 4px; }
+.chunk { margin-top: 12px; padding: 12px; background: #fafafa; border: 1px dashed #c4c9d0; border-radius: 6px; white-space: pre-wrap; font-size: 13px; }
+.row { display: flex; gap: 8px; align-items: center; margin-top: 10px; }
+@media (max-width: 800px) { main { grid-template-columns: 1fr; } }
